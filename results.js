@@ -13,7 +13,7 @@ const RESULTS = {
     "matches": {
       "round32": [
         { "match": 73,  "team1": "Ecuador", "team2": "Argentina" },
-        { "match": 74,  "team1": "1º C", "team2": "2º D" },
+        { "match": 74,  "team1": "España", "team2": "Colombia" },
         { "match": 75,  "team1": "1º E", "team2": "2º F" },
         { "match": 76,  "team1": "1º G", "team2": "2º H" },
         { "match": 77,  "team1": "1º I", "team2": "2º J" },
