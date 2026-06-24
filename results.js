@@ -4,21 +4,6 @@
    ============================================================ */
 
 const RESULTS = {
-  // 12 grupos del Mundial 2026 (4 equipos por grupo)
-  "groups": {
-    "A": ["Mexico", "South Africa", "Czech Republic", "South Korea"],
-    "B": ["Switzerland", "Canada", "Qatar", "Bosnia & Herzegovina"],
-    "C": ["Brazil", "Scotland", "Morocco", "Haiti"],
-    "D": ["Turkey", "Paraguay", "USA", "Australia"],
-    "E": ["Ivory Coast", "Curaçao", "Ecuador", "Germany"],
-    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
-    "G": ["Egypt", "Belgium", "New Zealand", "Iran"],
-    "H": ["Uruguay", "Cape Verde", "Spain", "Saudi Arabia"],
-    "I": ["Norway", "France", "Iraq", "Senegal"],
-    "J": ["Jordan", "Argentina", "Algeria", "Austria"],
-    "K": ["DR Congo", "Portugal", "Colombia", "Uzbekistan"],
-    "L": ["Ghana", "Panama", "Croatia", "England"]
-  },
 
   // Estructura de la Fase Eliminatoria (Knockouts)
   // Los nombres de los equipos en round32 se sobreescriben automáticamente
