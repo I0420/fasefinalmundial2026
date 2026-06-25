@@ -1,0 +1,175 @@
+/* Variables con la paleta de colores FIFA 2026 */
+:root {
+    --bg-main: #0b0e14;         /* Fondo oscuro texturizado */
+    --bg-card: #161b26;         /* Fondo de las tarjetas de partidos */
+    --bg-card-hover: #1f2636;   /* Hover de las tarjetas */
+    --text-light: #ffffff;      /* Texto principal */
+    --text-muted: #8b949e;     /* Texto secundario o gris */
+    --accent-green: #22c55e;    /* Verde vibrante marca 2026 */
+    --accent-blue: #06b6d4;     /* Azul secundario de branding */
+    --border-color: #2d3748;    /* Líneas de conexión y bordes */
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, var(--text-light), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--accent-green);
+    margin-top: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* Contenedor del esquema */
+.bracket-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+/* Columnas de cada ronda */
+.round-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    min-width: 220px;
+    height: 100%;
+}
+
+/* Tarjeta de Partido */
+.match-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.match-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-green);
+    background-color: var(--bg-card-hover);
+}
+
+/* Filas de equipos */
+.team-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.team-row:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.flag-placeholder {
+    width: 28px;
+    height: 20px;
+    background-color: #334155;
+    border-radius: 4px;
+    display: inline-block;
+    /* En producción reemplazar con: background-image: url('...'); */
+}
+
+.team-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.score {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-light);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Estilos especiales para el centro (Final y Tercer Puesto) */
+.center-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    min-width: 300px;
+}
+
+.trophy-container {
+    text-align: center;
+}
+
+.trophy-mock {
+    font-size: 4rem;
+    filter: drop-shadow(0 0 15px rgba(234, 179, 8, 0.4));
+    animation: float 4s ease-in-out infinite;
+}
+
+.final-match {
+    width: 100%;
+    border: 2px solid var(--accent-green);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+}
+
+.third-place-match {
+    width: 90%;
+    opacity: 0.85;
+}
+
+.center-stage h3 {
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: -1.5rem;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
