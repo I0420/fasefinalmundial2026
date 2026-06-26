@@ -549,11 +549,12 @@ body {
     .score { width: 35px; }
 }
 
+/* Esto controla directamente el contenedor interno inyectado por JS */
 #round32, #round16, #quarterfinals, #semifinals, #final {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Cambiado a wrap para que cree la segunda fila */
-    justify-content: flex-start;
+    flex-wrap: wrap;       /* <- ESTE permite que los partidos bajen y formen la segunda fila */
+    justify-content: center; /* Centra los partidos dentro de las filas si quedan espacios libres */
     gap: 12px;
     width: 100%;
 }
