@@ -170,12 +170,14 @@ body {
 .matches-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; /* Mantenlo así para que el contenedor principal no intente envolver */
     gap: 15px;
     overflow-x: auto;
     width: 100%;
     padding-bottom: 8px;
     animation: slideDown 0.3s ease;
+    max-width: 1280px;  /* Excelente para controlar el ancho total */
+    margin: 0 auto;     /* Centra el bloque */
 }
 
 .matches-container::-webkit-scrollbar {
@@ -546,11 +548,12 @@ body {
     .match-card { min-width: 130px; padding: 10px; }
     .score { width: 35px; }
 }
-/* Esto hace que los contenedores donde JS mete los partidos también sean horizontales */
+
 #round32, #round16, #quarterfinals, #semifinals, #final {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 10px;
+    flex-wrap: wrap; /* Cambiado a wrap para que cree la segunda fila */
+    justify-content: flex-start;
+    gap: 12px;
     width: 100%;
 }
