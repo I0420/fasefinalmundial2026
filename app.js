@@ -144,17 +144,23 @@ function updateKnockoutSelectorVisibility(matchId) {
     
     if (!selector) return;
     
-    if (scores && scores.home !== null && scores.away !== null && scores.home === scores.away) {
-        // Hay empate, mostrar selector
+    // Validamos que existan ambos scores y que no sean null ni strings vacíos
+    const hasHome = scores && scores.home !== null && scores.home !== '';
+    const hasAway = scores && scores.away !== null && scores.away !== '';
+    
+    if (hasHome && hasAway && parseInt(scores.home, 10) === parseInt(scores.away, 10)) {
+        // Hay empate confirmado, mostrar selector
         selector.classList.remove('hidden');
         selector.classList.add('active');
     } else {
-        // No hay empate o no hay scores, ocultar selector
+        // No hay empate o faltan datos, ocultar selector
         selector.classList.add('hidden');
         selector.classList.remove('active');
-        // Limpiar ganador en prórroga si no hay empate
-        state.knockout.userScores[matchId].knockoutWinner = null;
-    }
+        
+        // Solo limpiamos el ganador si ambos campos tienen datos y NO son iguales
+        if (hasHome && hasAway && parseInt(scores.home, 10) !== parseInt(scores.away, 10)) {
+            state.knockout.userScores[matchId].knockoutWinner = null;
+        }
 }
 
 function saveLocalPrediction() {
