@@ -273,8 +273,11 @@ function submitPrediction(playerName) {
         // Tomar la captura del elemento HTML
         html2canvas(targetElement, {
             backgroundColor: '#0b0e14', // Mantiene el fondo oscuro de tu app
-            useCORS: true,             // Soporte para recursos externos como banderas
-            scale: 2                   // Duplica la resolución para que se vea nítida
+            useCORS: true,             // Permite cargar recursos e iconos externos
+            allowTaint: true,          // Permite capturar elementos con imágenes externas
+            scale: 2,                  // Duplica la resolución para que se vea nítida
+            logging: false,            // Desactiva logs en consola para mayor velocidad
+            imageTimeout: 0            // Fuerza a que no haya tiempo límite esperando los gráficos de las banderas
         }).then(canvas => {
             // Convertir el resultado a formato de imagen PNG
             const imageURL = canvas.toDataURL('image/png');
