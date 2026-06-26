@@ -546,3 +546,11 @@ body {
     .match-card { min-width: 130px; padding: 10px; }
     .score { width: 35px; }
 }
+/* Esto hace que los contenedores donde JS mete los partidos también sean horizontales */
+#round32, #round16, #quarterfinals, #semifinals, #final {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+}
