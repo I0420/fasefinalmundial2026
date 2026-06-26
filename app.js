@@ -161,6 +161,7 @@ function updateKnockoutSelectorVisibility(matchId) {
         if (hasHome && hasAway && parseInt(scores.home, 10) !== parseInt(scores.away, 10)) {
             state.knockout.userScores[matchId].knockoutWinner = null;
         }
+    }
 }
 
 function saveLocalPrediction() {
