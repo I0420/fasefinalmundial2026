@@ -238,30 +238,69 @@ function validatePredictions() {
 }
 
 function submitPrediction(playerName) {
-    // Validar antes de enviar
+    // 1. Validar antes de enviar (Se mantiene tu validación original)
     if (!validatePredictions()) {
         return;
     }
     
-    showLoading(true, "Enviando pronóstico...");
-    const payload = { user: playerName, timestamp: new Date().toISOString(), knockout: state.knockout.userScores };
+    // 2. Mostrar pantalla de carga
+    showLoading(true, "Enviando pronóstico y generando imagen...");
+    
+    // Preparar datos para el formulario de Google (Tu configuración original)
     const formData = new FormData();
     formData.append("entry.1597300776", playerName);
     formData.append("entry.1633537385", "FASE_ELIMINATORIA");
     formData.append("entry.634416458", JSON.stringify(state.knockout.userScores));
 
+    // 3. Enviar datos a Google Forms de forma asíncrona
     fetch(FORM_URL, { method: "POST", mode: "no-cors", body: formData })
     .then(() => {
-        showLoading(false);
-        document.getElementById('nameModal').style.display = 'none';
+        // Guardar copia local en el navegador
+        const payload = { user: playerName, timestamp: new Date().toISOString(), knockout: state.knockout.userScores };
         localStorage.setItem('worldCup2026_myPrediction', JSON.stringify(payload));
-        downloadPrediction(playerName, payload);
-        showToast('✅ ¡Pronóstico enviado y descargado!');
-        triggerConfetti();
+        
+        // Ocultar el modal de ingreso de nombre
+        document.getElementById('nameModal').style.display = 'none';
+
+        // 4. GENERAR LA IMAGEN (Aquí es donde ocurre la magia tras el envío exitoso)
+        const targetElement = document.getElementById('bracket-section');
+        if (!targetElement) {
+            showLoading(false);
+            showToast('✅ ¡Pronóstico enviado! (No se pudo capturar la imagen)', false);
+            return;
+        }
+
+        // Tomar la captura del elemento HTML
+        html2canvas(targetElement, {
+            backgroundColor: '#0b0e14', // Mantiene el fondo oscuro de tu app
+            useCORS: true,             // Soporte para recursos externos como banderas
+            scale: 2                   // Duplica la resolución para que se vea nítida
+        }).then(canvas => {
+            // Convertir el resultado a formato de imagen PNG
+            const imageURL = canvas.toDataURL('image/png');
+
+            // Crear el gatillo de descarga automática
+            const downloadLink = document.createElement('a');
+            downloadLink.href = imageURL;
+            downloadLink.download = `Pronostico_Mundial2026_${playerName.replace(/\s+/g, '_')}.png`;
+            
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+
+            // 5. Finalizar procesos visuales de éxito (Tus alertas originales)
+            showLoading(false);
+            showToast('✅ ¡Pronóstico enviado e imagen descargada!');
+            triggerConfetti();
+        }).catch(errImg => {
+            console.error("Error al crear la imagen:", errImg);
+            showLoading(false);
+            showToast('✅ ¡Enviado!, pero hubo un detalle al procesar la imagen.', true);
+        });
     })
     .catch(err => { 
         showLoading(false); 
-        showToast("Error al enviar", true); 
+        showToast("Error al enviar los datos del formulario", true); 
     });
 }
 
