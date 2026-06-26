@@ -2,7 +2,7 @@ const RESULTS = {
   "knockout": {
     "matches": {
       "round32": [
-        { "match": 1, "team1": "Ecuador", "team2": "Argentina" },
+        { "match": 1, "team1": "South Africa", "team2": "Canada" },
         { "match": 2, "team1": "Spain", "team2": "Colombia" },
         { "match": 3, "team1": "Germany", "team2": "France" },
         { "match": 4, "team1": "Brazil", "team2": "Japan" },
