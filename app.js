@@ -9,7 +9,7 @@ const TEAM_DATA = {
   "Portugal": { name: "Portugal", code: "pt" }, "Switzerland": { name: "Suiza", code: "ch" },
   "Belgium": { name: "Bélgica", code: "be" }, "Canada": { name: "Canadá", code: "ca" },
   "Croatia": { name: "Croacia", code: "hr" }, "Italy": { name: "Italia", code: "it" },
-  "Denmark": { name: "Dinamarca", code: "dk" }, "Czech Republic": { name: "Rep. Checa", code: "cz" },
+  "Ivory Coast": { name: "Costa de Marfil", code: "ic" }, "Czech Republic": { name: "Rep. Checa", code: "cz" },
   "South Korea": { name: "Corea del Sur", code: "kr" }, "Uruguay": { name: "Uruguay", code: "uy" },
   "Poland": { name: "Polonia", code: "pl" }, "Austria": { name: "Austria", code: "at" },
   "Greece": { name: "Grecia", code: "gr" }, "Turkey": { name: "Turquía", code: "tr" },
@@ -19,8 +19,8 @@ const TEAM_DATA = {
   "Egypt": { name: "Egipto", code: "eg" }, "Australia": { name: "Australia", code: "au" },
   "Qatar": { name: "Catar", code: "qa" }, "Iran": { name: "Irán", code: "ir" },
   "Saudi Arabia": { name: "Arabia Saudita", code: "sa" }, "Tunisia": { name: "Túnez", code: "tn" },
-  "Costa Rica": { name: "Costa Rica", code: "cr" }, "Panama": { name: "Panamá", code: "pa" },
-  "Jamaica": { name: "Jamaica", code: "jm" }, "Honduras": { name: "Honduras", code: "hn" }
+  "Cabo Verde": { name: "Cabo Verde", code: "cv" }, "Panama": { name: "Panamá", code: "pa" },
+  "Jamaica": { name: "Jamaica", code: "jm" }, "Paraguay": { name: "Paraguay", code: "PY" }
 };
 
 const LEADERBOARD_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSVvvNGujGkfjrkQbiedhJVzNl4va6QMYKCMXE2SG14OE0wAf0vczmzVHP_GMASwqBdWHbuRZI10U2x/pub?gid=481878926&single=true&output=csv';
