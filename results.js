@@ -10,7 +10,7 @@ const RESULTS = {
         { "match": 6, "team1": "France", "team2": "Switzerland" },
         { "match": 7, "team1": "Mexico", "team2": "Ecuador" },
         { "match": 8, "team1": "Belgium", "team2": "Belgium" },
-        { "match": 9, "team1": "United State", "team2": "Bosnia and Herzegovina" },
+        { "match": 9, "team1": "United State", "team2": "Bosnia & Herzegovina" },
         { "match": 10, "team1": "Spain", "team2": "Spain" },
         { "match": 11, "team1": "Sweden", "team2": "Sweden" },
         { "match": 12, "team1": "Australia", "team2": "Egypt" },
