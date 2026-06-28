@@ -14,7 +14,7 @@ const RESULTS = {
         { "match": 10, "team1": "Spain", "team2": "Austria" },
         { "match": 11, "team1": "Switzerland", "team2": "Algelia" },
         { "match": 12, "team1": "Australia", "team2": "Egypt" },
-        { "match": 13, "team1": "Argentina", "team2": "Cabo Verde" },
+        { "match": 13, "team1": "Argentina", "team2": "Cape Verde" },
         { "match": 14, "team1": "Colombia", "team2": "Ghana" },
         { "match": 15, "team1": "Portugal", "team2": "Croacia" },
         { "match": 16, "team1": "England", "team2": "DR Congo" }
