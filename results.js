@@ -16,7 +16,7 @@ const RESULTS = {
         { "match": 12, "team1": "Australia", "team2": "Egypt" },
         { "match": 13, "team1": "Argentina", "team2": "Cape Verde" },
         { "match": 14, "team1": "Colombia", "team2": "Ghana" },
-        { "match": 15, "team1": "Portugal", "team2": "Croacia" },
+        { "match": 15, "team1": "Portugal", "team2": "Croatia" },
         { "match": 16, "team1": "England", "team2": "DR Congo" }
       ],
       "round16": [
