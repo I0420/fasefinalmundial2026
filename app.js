@@ -480,4 +480,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         submitPrediction(name);
     });
-
+  
+ });
