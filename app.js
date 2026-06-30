@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('btnScoringHelp')?.addEventListener('click', () => {
-        alert('PUNTUACIÓN:\n\n⚽ Marcador exacto: 3 pts\n🎯 Acertar ganador: 1 pt\n⏱️ Acertar prórroga/penales: +1 pt');
+        alert('PUNTUACIÓN:\n\n⚽ Marcador exacto: 3 pts\n🎯 Acertar ganador (90 minutos): 1 pt\n⏱️ Acertar prórroga/penales: +1 pt');
     });
 
     document.getElementById('btnSubmit')?.addEventListener('click', () => {
