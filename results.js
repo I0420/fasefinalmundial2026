@@ -20,7 +20,7 @@ const RESULTS = {
         { "match": 16, "team1": "England", "team2": "DR Congo" }
       ],
       "round16": [
-        { "match": 17, "team1": "Canada", "team2": "Ganador 2" },
+        { "match": 17, "team1": "Canada", "team2": "Morocco" },
         { "match": 18, "team1": "Paraguay", "team2": "Ganador 4" },
         { "match": 19, "team1": "Brazil", "team2": "Ganador 6" },
         { "match": 20, "team1": "Ganador 7", "team2": "Ganador 8" },
