@@ -21,8 +21,8 @@ const RESULTS = {
       ],
       "round16": [
         { "match": 17, "team1": "Canada", "team2": "Morocco" },
-        { "match": 18, "team1": "Paraguay", "team2": "Ganador 4" },
-        { "match": 19, "team1": "Brazil", "team2": "Ganador 6" },
+        { "match": 18, "team1": "Paraguay", "team2": "France" },
+        { "match": 19, "team1": "Brazil", "team2": "Norway" },
         { "match": 20, "team1": "Ganador 7", "team2": "Ganador 8" },
         { "match": 21, "team1": "Ganador 9", "team2": "Ganador 10" },
         { "match": 22, "team1": "Ganador 11", "team2": "Ganador 12" },
