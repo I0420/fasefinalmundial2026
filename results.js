@@ -23,7 +23,7 @@ const RESULTS = {
         { "match": 17, "team1": "Canada", "team2": "Morocco" },
         { "match": 18, "team1": "Paraguay", "team2": "France" },
         { "match": 19, "team1": "Brazil", "team2": "Norway" },
-        { "match": 20, "team1": "Ganador 7", "team2": "Ganador 8" },
+        { "match": 20, "team1": "Mexico", "team2": "England" },
         { "match": 21, "team1": "Ganador 9", "team2": "Ganador 10" },
         { "match": 22, "team1": "Ganador 11", "team2": "Ganador 12" },
         { "match": 23, "team1": "Ganador 13", "team2": "Ganador 14" },
