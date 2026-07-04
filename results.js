@@ -26,7 +26,7 @@ const RESULTS = {
         { "match": 20, "team1": "Mexico", "team2": "England" },
         { "match": 21, "team1": "Portugal", "team2": "Spain" },
         { "match": 22, "team1": "USA", "team2": "Belgium" },
-        { "match": 23, "team1": "Ganador 13", "team2": "Egypt" },
+        { "match": 23, "team1": "Argentina", "team2": "Egypt" },
         { "match": 24, "team1": "Switzerland", "team2": "Ganador 16" }
       ],
       "quarterfinals": [
