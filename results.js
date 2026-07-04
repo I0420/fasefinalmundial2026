@@ -24,10 +24,10 @@ const RESULTS = {
         { "match": 18, "team1": "Paraguay", "team2": "France" },
         { "match": 19, "team1": "Brazil", "team2": "Norway" },
         { "match": 20, "team1": "Mexico", "team2": "England" },
-        { "match": 21, "team1": "Ganador 9", "team2": "Ganador 10" },
-        { "match": 22, "team1": "Ganador 11", "team2": "Ganador 12" },
-        { "match": 23, "team1": "Ganador 13", "team2": "Ganador 14" },
-        { "match": 24, "team1": "Ganador 15", "team2": "Ganador 16" }
+        { "match": 21, "team1": "Portugal", "team2": "Spain" },
+        { "match": 22, "team1": "USA", "team2": "Belgium" },
+        { "match": 23, "team1": "Ganador 13", "team2": "Egypt" },
+        { "match": 24, "team1": "Switzerland", "team2": "Ganador 16" }
       ],
       "quarterfinals": [
         { "match": 25, "team1": "Ganador 17", "team2": "Ganador 18" },
