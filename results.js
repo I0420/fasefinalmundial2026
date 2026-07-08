@@ -33,7 +33,7 @@ const RESULTS = {
         { "match": 25, "team1": "France", "team2": "Morocco" },
         { "match": 26, "team1": "Spain", "team2": "Belgium" },
         { "match": 27, "team1": "Norway", "team2": "England" },
-        { "match": 28, "team1": "Ganador 23", "team2": "Ganador 24" }
+        { "match": 28, "team1": "Argentina", "team2": "Switzerland" }
       ],
       "semifinals": [
         { "match": 29, "team1": "Ganador 25", "team2": "Ganador 26" },
