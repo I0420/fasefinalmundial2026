@@ -618,7 +618,7 @@ body {
 }
 
 /* Contenedores internos inyectados por JS */
-#round32, #round16, #quarterfinals, #semifinals, #final {
+#round32, #round16, #quarterfinals, #semifinals, #third_place, #final {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
