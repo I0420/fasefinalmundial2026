@@ -58,7 +58,8 @@ let state = {
         round32: true,    // ✅ Visible
         round16: false,   // ❌ Oculto
         quarterfinals: false, // ❌ Oculto
-        semifinals: false,    // ❌ Oculto
+        semifinals: false, // ❌ Oculto
+        third_place: false,
         final: false          // ❌ Oculto
     } 
 };
@@ -127,6 +128,10 @@ function renderBracket() {
     }
 
     const matches = RESULTS.knockout.matches;
+
+    if (matches.third_place && matches.third_place.length > 0) {
+        const html = matches.third_place.map(m => createMatchHTML(m)).join('');
+        document.getElementById('third_place').innerHTML = html;
 
     if (matches.round32 && matches.round32.length > 0) {
         const html = matches.round32.map(m => createMatchHTML(m)).join('');
@@ -237,6 +242,7 @@ function updatePhaseVisibility() {
         'round16': 'round16-container',
         'quarterfinals': 'quarterfinals-container',
         'semifinals': 'semifinals-container',
+        'third_place': 'third_place-container',
         'final': 'final-container'
     };
 
