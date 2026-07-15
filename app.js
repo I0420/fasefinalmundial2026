@@ -129,10 +129,6 @@ function renderBracket() {
 
     const matches = RESULTS.knockout.matches;
 
-    if (matches.third_place && matches.third_place.length > 0) {
-        const html = matches.third_place.map(m => createMatchHTML(m)).join('');
-        document.getElementById('third_place').innerHTML = html;
-
     if (matches.round32 && matches.round32.length > 0) {
         const html = matches.round32.map(m => createMatchHTML(m)).join('');
         document.getElementById('round32').innerHTML = html;
@@ -153,6 +149,11 @@ function renderBracket() {
         document.getElementById('semifinals').innerHTML = html;
     }
 
+  if (matches.third_place && matches.third_place.length > 0) {
+        const html = matches.third_place.map(m => createMatchHTML(m)).join('');
+        document.getElementById('third_place').innerHTML = html;
+    }
+  
     if (matches.final && matches.final.length > 0) {
         const html = matches.final.map(m => createMatchHTML(m, 'final')).join('');
         document.getElementById('final').innerHTML = html;
