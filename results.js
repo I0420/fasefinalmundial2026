@@ -39,8 +39,11 @@ const RESULTS = {
         { "match": 29, "team1": "France", "team2": "Spain" },
         { "match": 30, "team1": "England", "team2": "Argentina" }
       ],
+      "third_place": [
+        { "match": 31, "team1": "France", "team2": "England" }
+      ],
       "final": [
-        { "match": 31, "team1": "Ganador 29", "team2": "Ganador 30" }
+        { "match": 32, "team1": "Spain", "team2": "Argentina" }
       ]
     }
   }
